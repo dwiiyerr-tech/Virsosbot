@@ -5,8 +5,8 @@ from threading import Thread
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-BOT_TOKEN = os.getenv("BOT_TOKEN 8417989121:AAG4eHplnHWyPXc3vjpv2QdsYjeJ_fRCGkE")
-ADSTERA_LINK = os.getenv("ADSTERA_LINK", "https://url-shortener.me/8C7Y£")
+BOT_TOKEN = os.getenv("8417989121:AAG4eHplnHWyPXc3vjpv2QdsYjeJ_fRCGkE")
+ADSTERA_LINK = os.getenv("https://url-shortener.me/8C7Y£")
 CHANNEL_ID = "@VIRRSOS"
 DATA_FILE = "data.json"
 

@@ -5,7 +5,7 @@ from threading import Thread
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("BOT_TOKEN 8417989121:AAG4eHplnHWyPXc3vjpv2QdsYjeJ_fRCGkE")
 ADSTERA_LINK = os.getenv("ADSTERA_LINK", "https://url-shortener.me/8C7Y£")
 CHANNEL_ID = "@VIRRSOS"
 DATA_FILE = "data.json"
@@ -41,7 +41,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if user_id not in data:
         data[user_id] = {"clicked": False}
         save_data(data)
-    keyboard = [[InlineKeyboardButton("🔗 Klik untuk lanjut", url=ADSTERA_LINK)]]
+    keyboard = [[InlineKeyboardButton("🔗 Klik untuk lanjut", url=https://url-shortener.me/8C7Y)]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text("👋 Halo! Klik link di bawah ini dulu sebelum promote:",
                                     reply_markup=reply_markup)
@@ -55,12 +55,12 @@ async def promote(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not msg:
         await update.message.reply_text("Tulis pesan promote setelah /promote ya!")
         return
-    promote_text = f"{msg}\n\n💸 Link sponsor: {ADSTERA_LINK}"
+    promote_text = f"{msg}\n\n💸 Link sponsor: {https://url-shortener.me/8C7Y}"
     await context.bot.send_message(chat_id=CHANNEL_ID, text=promote_text)
     await update.message.reply_text("✅ Promote kamu sudah dikirim ke channel!")
 
 def main():
-    app_bot = ApplicationBuilder().token(BOT_TOKEN).build()
+    app_bot = ApplicationBuilder().token(8417989121:AAG4eHplnHWyPXc3vjpv2QdsYjeJ_fRCGkE).build()
     app_bot.add_handler(CommandHandler("start", start))
     app_bot.add_handler(CommandHandler("promote", promote))
     keep_alive()
